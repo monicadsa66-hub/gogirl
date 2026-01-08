@@ -1,0 +1,88 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Whole page */
+body {
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Cart */
+.cart-info {
+    margin-top: 10px;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Product card */
+.product {
+    background: white;
+    width: 260px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Images */
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Price */
+.price {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Inputs & buttons */
+select, button, input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #333;
+}
+
+/* Checkout */
+.checkout {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
