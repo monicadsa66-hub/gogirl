@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Mobile responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab title -->
+    <title>GoGirl | Dream it. Wear it.</title>
+
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / BRAND SECTION ===== -->
+    <header>
+        <h1>GoGirl</h1>
+        <p class="tagline">Dream it. Wear it.</p>
+
+        <!-- Cart display -->
+        <div class="cart-info">
+            🛒 Cart: <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- ===== PRODUCT SECTION ===== -->
+    <section class="products">
+
+        <!-- Product Card -->
+        <div class="product">
+            <img src="images/dress1.jpg" alt="Dress">
+
+            <h2>Floral Summer Dress</h2>
+            <p class="price">₹1,499</p>
+
+            <!-- Size selection -->
+            <select class="size">
+                <option value="">Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+
+            <!-- Button triggers JavaScript function -->
+            <button onclick="addToCart('Floral Summer Dress',1499,this)">
+                Add to Cart
+            </button>
+        </div>
+
+        <!-- Duplicate product blocks for more dresses -->
+
+    </section>
+
+    <!-- ===== CHECKOUT SECTION ===== -->
+    <section class="checkout">
+        <h2>Checkout</h2>
+
+        <!-- Customer details -->
+        <input id="name" placeholder="Full Name">
+        <input id="email" placeholder="Email">
+        <textarea id="address" placeholder="Delivery Address"></textarea>
+
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+
+    <!-- Link JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
